@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function home_page(){
-        $name = "adib";
-        return view("home",compact("name"));
+        $name = "Hacker";
+        $students = [
+            "hacker", "Joker", "SpiderMan", "Batman", "SuperMan"
+        ];
+        return view("home",compact("name", "students"));
     }
 }
